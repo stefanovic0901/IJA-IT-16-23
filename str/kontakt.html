@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Hyundai Srbija</title>
+</head>
+<body>
+    <div class="navbar">
+        <a class="logo" href="../index.html"><img src="../Logo.svg" alt="logo" width="200px"></a>
+        <ul>
+          <li><a href="modeli.html">Modeli</a></li>
+          <li><a href="lokacije.html">Lokacije</a></li>
+          <li><a class="active" href="#">Kontakt</a></li>
+        </ul>
+    </div>
+    <h1>Očekujemo Vas</h1>
+    <div class="forma">
+        <form  action="">
+            <label >Ime i Prezime</label> <br>
+            <input type="text" name="name"  required> <br>
+        
+            <label>Broj telefona</label> <br>
+            <input type="tel" name="phone" minlength="11" placeholder="ex:+3811234567" required> <br>
+            <label>E-mail adresa</label> <br>
+            <input type="email" placeholder="email@example.com"  name="email" required><br>
+        
+            <label>Grad:</label>  <br>           
+                <input type="radio" name="grad" value="Novi Sad"> <label id="grad">Novi Sad</label>
+                <input type="radio" name="grad" value="Beograd"><label id="grad">Beograd</label><br>
+            <label>Vrsta usluge:</label>  <br>
+                <input type="radio" name="usluga" value="Zakazivanje servisa"> <label id="grad">Zakazivanje servisa</label> <br>
+                <input type="radio" name="usluga" value="Kupovina automobila"> <label id="grad">Kupovina automobila</label><br>
+            <label>Model automobila:</label>
+            <select name="automodel" required  >
+                <option value="izaberi"disabled selected>Izaberi:</option>
+                <option value="i10">I10</option>
+                <option value="i20">I20</option>
+                <option value="i30">I30</option>
+                <option value="kona">Kona</option>
+                <option value="tuscon">Tuscon</option>
+                <option value="santafe">SantaFe</option>
+                <option value="bayon">Bayon</option>
+            </select><br>
+            <label>Pišite nam (opciono):</label><br>
+            <textarea name="text" cols="25" rows="5" ></textarea> <br>
+            <button type="submit" class="submit">Potvrdi</button>
+        </form>
+    </div>
+    <h1 id="follow">Zaprati nas</h1>
+    <div class="zaprati">
+        <a href="https://www.facebook.com"><img src="../fb.svg" alt="fb"></a>
+        <a href="https://www.instagram.com"><img src="../ig.svg" alt="ig"></a>
+        <a href="https://x.com"><img src="../tw.svg" alt="twitter"></a>
+    </div>
+
+
+</body>
+</html>
